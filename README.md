@@ -14,12 +14,10 @@ Every concept includes **in-depth theory notes, memory architecture explanations
 ```
 coding_1/
 │
-├── README.md                                  # Repository overview and quick start guide
+├── README.md                                  # Complete repository overview and master guide
 ├── .gitignore                                 # Clean git environment rules
 │
 └── pythonpractice/
-    ├── README.md                              # Detailed module syllabus & master cheat sheet
-    │
     ├── 01_basics_and_syntax/                  # MODULE 1: BASICS
     │   ├── 01_variables_and_datatypes.py      # Primitive types, dynamic typing, type casting
     │   ├── 02_operators_and_expressions.py    # Arithmetic, identity (is), membership (in), bitwise
@@ -61,19 +59,49 @@ coding_1/
 
 ---
 
-## 🚀 Running the All-In-One Script
+## 🚀 Running the Modules
 
+### The All-In-One Script (Modules 1 to 9):
 To run the complete interactive Python curriculum in your terminal:
 
 ```powershell
 python pythonpractice/practice2/classqobtheoryandpractical.py
 ```
 
-Or run any specific module:
+### Or Run Any Specific Topic Individually:
 
 ```powershell
-python pythonpractice/04_object_oriented_programming/03_oop_four_pillars.py
+# Basics & Control Flow
+python pythonpractice/01_basics_and_syntax/01_variables_and_datatypes.py
+python pythonpractice/01_basics_and_syntax/02_operators_and_expressions.py
+python pythonpractice/01_basics_and_syntax/03_conditionals_and_loops.py
+
+# Core Data Structures
 python pythonpractice/02_data_structures/01_strings.py
+python pythonpractice/02_data_structures/02_lists.py
+python pythonpractice/02_data_structures/03_tuples.py
+python pythonpractice/02_data_structures/04_sets.py
+python pythonpractice/02_data_structures/05_dictionaries.py
+
+# Functions & Algorithms
+python pythonpractice/03_functions_and_algorithms/01_functions_and_scope.py
+python pythonpractice/03_functions_and_algorithms/02_recursion_and_math.py
+python pythonpractice/03_functions_and_algorithms/03_lambda_map_filter.py
+
+# Object-Oriented Programming (OOP)
+python pythonpractice/04_object_oriented_programming/01_classes_and_objects.py
+python pythonpractice/04_object_oriented_programming/02_class_vs_instance_vars.py
+python pythonpractice/04_object_oriented_programming/03_oop_four_pillars.py
+
+# File Handling & Exceptions
+python pythonpractice/05_file_handling/01_text_files_and_modes.py
+python pythonpractice/05_file_handling/02_csv_and_data_splitting.py
+python pythonpractice/06_error_and_exception_handling/01_try_except_finally.py
+python pythonpractice/06_error_and_exception_handling/02_custom_exceptions_and_chaining.py
+
+# Advanced Python
+python pythonpractice/07_advanced_python/01_comprehensions.py
+python pythonpractice/07_advanced_python/02_generators_and_iterators.py
 python pythonpractice/07_advanced_python/03_decorators_and_dunders.py
 ```
 
@@ -88,3 +116,11 @@ python pythonpractice/07_advanced_python/03_decorators_and_dunders.py
 | **Set** | Mutable | **Unordered** | **Forbidden** | `{1, 2, 3}` | $O(1)$ average membership |
 | **Dict** | Mutable | Ordered (3.7+) | Unique Keys | `{'key': 'value'}` | $O(1)$ average key access |
 | **String** | **Immutable** | Ordered | Allowed | `"Python"` | $O(1)$ by index |
+
+---
+
+## 🏆 The 4 Pillars of OOP Quick Reference
+1. **Encapsulation**: Bundling state and behavior; protecting private data (`__balance`) via Name Mangling (`_Class__balance`) and getters/setters.
+2. **Inheritance**: Reusing code hierarchically (`class Child(Parent):`); using `super().__init__()` for constructor chaining.
+3. **Polymorphism**: Same interface, different behavior via Method Overriding and Duck Typing.
+4. **Abstraction**: Enforcing design contracts using `from abc import ABC, abstractmethod`.
